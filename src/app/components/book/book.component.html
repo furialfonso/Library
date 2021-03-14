@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card border-success mb-3">
+    <div class="card-header text-center">
+      <h5 class="card-title">{{title}}</h5>
+    </div>
+    <div class="my-2 text-left">
+      <button class="btn btn-rounded btn-success" type="button" [routerLink]="['/detail']">Crear Cliente</button>
+    </div>
+    <div class="card-body text-success">
+      <table class="table table-bordered table-striped">
+        <thead class="text-center">
+          <tr>
+            <th>Titulo</th>
+            <th>Año</th>
+            <th>Genero</th>
+            <th>Numero de paginas</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <td class="td">{{book.title}}</td>
+            <td class="td">{{book.year}}</td>
+            <td class="td">{{book.gender}}</td>
+            <td class="td">{{book.numPages}}</td>
+            <td class="td">{{book.author.name}}</td>
+            <td class="td">{{book.editorial.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
