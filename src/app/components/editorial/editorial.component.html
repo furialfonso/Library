@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card border-success mb-3">
+    <div class="card-header text-center">
+      <h5 class="card-title">{{title}}</h5>
+    </div>
+    <div class="card-body text-success">
+      <table class="table table-bordered table-striped">
+        <thead class="text-center">
+          <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Telefono</th>
+            <th>Maximo de libros</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let editorial of editorials">
+            <td class="td">{{editorial.name}}</td>
+            <td class="td">{{editorial.address}}</td>
+            <td class="td">{{editorial.phone}}</td>
+            <td class="td">{{editorial.maximumBooks}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

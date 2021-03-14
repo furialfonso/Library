@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card border-success mb-3">
+    <div class="card-header text-center">
+      <h5 class="card-title">{{title}}</h5>
+    </div>
+    <div class="card-body text-success">
+      <table class="table table-bordered table-striped">
+        <thead class="text-center">
+          <tr>
+            <th>Nombre</th>
+            <th>Fecha nacimiento</th>
+            <th>Ciudad origen</th>
+            <th>Correo Electronico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let author of authors">
+            <td class="td">{{author.name}}</td>
+            <td class="td">{{author.birthDate}}</td>
+            <td class="td">{{author.cityOrigin}}</td>
+            <td class="td">{{author.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
